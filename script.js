@@ -52,3 +52,17 @@ const people = [
   ];
   
   console.log(filter(people, isMale)); 
+
+// Задание №3
+
+const timer = (deadline) => {
+   
+const interval = setInterval(() => {
+    console.log(new Date);
+  }, 3000);
+  setTimeout(() => {
+    clearInterval(interval);
+    console.log('30 секунд прошло');
+  }, deadline * 1000);
+};
+timer(30)
